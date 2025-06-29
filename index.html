@@ -4,36 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cronometro</title>
+  <title>Cronômetro</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-  <div id="container">
+  <main>
     <div class="time-display">
-      <span id="hours">00:</span>
-      <span id="minutes">00:</span>
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
       <span id="seconds">00</span>
     </div>
 
     <div class="btn-group">
-
-      <div class="stop">
+      <button class="stop btn" aria-label="Pausar o cronômetro">
         <i class="fa-solid fa-stop"></i>
-      </div>
+      </button>
 
-      <div class="play">
+      <button class="play btn" aria-label="Iniciar o cronômetro">
         <i class="fa-solid fa-play"></i>
-      </div>
+      </button>
 
-      <div class="reset">
-        <i class="fa-solid fa-reply"></i>
-      </div>
-
+      <button class="reset btn" aria-label="Reiniciar o cronômetro">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
     </div>
-  </div>
+  </main>
 </body>
+
 <script src="script.js"></script>
 
 </html>

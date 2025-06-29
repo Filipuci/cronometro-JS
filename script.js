@@ -42,8 +42,8 @@ function timeAdd() {
 
 function updateDisplay() {
   secondsElement.textContent = padding(countSeconds)
-  minutesElement.textContent = `${padding(countMinutes)} :`
-  hoursElement.textContent = `${padding(countHours)} :`
+  minutesElement.textContent = padding(countMinutes)
+  hoursElement.textContent = padding(countHours)
 }
 
 
