@@ -1,16 +1,12 @@
-const hoursElement = document.querySelector('#hours')
-const minutesElement = document.querySelector('#minutes')
-const secondsElement = document.querySelector('#seconds')
-
-let countSeconds = 0
-let countMinutes = 0
-let countHours = 0
+let seconds = 0
+let minutes = 0
+let hours = 0
 
 let myInterval = null
 
 document.querySelector('.play').addEventListener('click', () => {
   if (myInterval !== null) return
-  myInterval = setInterval(timeAdd, 1000)
+  myInterval = setInterval(incrementTime, 1000)
 })
 
 document.querySelector('.stop').addEventListener('click', () => {
@@ -19,34 +15,33 @@ document.querySelector('.stop').addEventListener('click', () => {
 })
 
 document.querySelector('.reset').addEventListener('click', () => {
-  countSeconds = 0
-  countMinutes = 0
-  countHours = 0
+  seconds = 0
+  minutes = 0
+  hours = 0
 
   updateDisplay()
+  clearInterval(myInterval)
+  myInterval = null
 })
 
-function timeAdd() {
-  countSeconds++ 
-  if (countSeconds === 60) {
-    countMinutes++
-    countSeconds = 0
+const incrementTime = () => {
+  seconds++ 
+  if (seconds === 60) {
+    minutes++
+    seconds = 0
   }
-  if (countMinutes === 60) {
-    countHours++
-    countMinutes = 0
+  if (minutes === 60) {
+    hours++
+    minutes = 0
   }
 
   updateDisplay()
 }
 
-function updateDisplay() {
-  secondsElement.textContent = padding(countSeconds)
-  minutesElement.textContent = padding(countMinutes)
-  hoursElement.textContent = padding(countHours)
+const updateDisplay = () => {
+  document.querySelector('#seconds').textContent = formatTwoDigits(seconds)
+  document.querySelector('#minutes').textContent = formatTwoDigits(minutes)
+  document.querySelector('#hours').textContent = formatTwoDigits(hours)
 }
 
-
-function padding(number) {
-  return number.toString().padStart(2, '0')
-}
+const formatTwoDigits = number => number.toString().padStart(2, '0')
