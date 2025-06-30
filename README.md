@@ -45,8 +45,9 @@ cd cronometro-js
 
 # Abra o index.html no navegador
 
-✅ Ou acesse diretamente [a versão online do projeto]
 ```
+
+✅ Ou acesse diretamente [a versão online do projeto](https://filipuci.github.io/cronometro-JS/)
 
 ## 👨‍💻 Autor
 
