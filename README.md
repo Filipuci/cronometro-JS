@@ -38,7 +38,7 @@ Um cronômetro simples e minimalista feito com **HTML**, **CSS** e **JavaScript 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/cronometro-js.git
+git clone https://github.com/Filipuci/cronometro-js.git
 
 # Entre na pasta do projeto
 cd cronometro-js
