@@ -7,7 +7,7 @@ Um cronômetro simples e minimalista feito com **HTML**, **CSS** e **JavaScript 
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 ✅ Iniciar o cronômetro  
 ✅ Pausar o cronômetro  
@@ -16,7 +16,7 @@ Um cronômetro simples e minimalista feito com **HTML**, **CSS** e **JavaScript 
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **HTML5** — estrutura semântica
 - **CSS3** — layout responsivo e minimalista
@@ -34,7 +34,7 @@ Um cronômetro simples e minimalista feito com **HTML**, **CSS** e **JavaScript 
 
 ---
 
-## 🚀 Como rodar o projeto localmente
+## Como rodar o projeto localmente
 
 ```bash
 # Clone o repositório
@@ -44,18 +44,17 @@ git clone https://github.com/Filipuci/cronometro-js.git
 cd cronometro-js
 
 # Abra o index.html no navegador
-
 ```
 
-✅ Ou acesse diretamente [a versão online do projeto](https://filipuci.github.io/cronometro-JS/)
+ Ou acesse diretamente [a versão online do projeto](https://filipuci.github.io/cronometro-JS/)
 
-## 👨‍💻 Autor
+## Autor
 
 Feito por **[Filipuci](https://github.com/Filipuci)**.
 
 ---
 
-## ⭐ Contribuições
+## Contribuições
 
 Sinta-se à vontade para abrir issues, enviar pull requests ou dar uma estrela ⭐ no repositório caso ache o projeto útil!
 
